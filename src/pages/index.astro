@@ -1,0 +1,289 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="FATT - Organization">
+
+  <!-- Hero Section -->
+  <div id="home">
+    <Hero />
+  </div>
+
+  <!-- Our Work Section - Stage 2: Mid Blue -->
+  <Section 
+    id="about" 
+    title="Projects" 
+    subtitle="Explore our latest projects that push the boundaries of aerospace technology."
+    bgColor="bg-gradient-to-b from-blue-500 to-blue-600"
+    textColor="text-white"
+  >
+    <!-- Horizontal Scrolling Container -->
+    <div class="relative">
+      <div class="flex gap-6 overflow-x-auto pb-6 scrollbar-hide" style="scroll-snap-type: x mandatory;">
+        <!-- Work Card 1 -->
+        <div class="flex-none w-80 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-6 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.1s;">
+          <div class="w-full h-48 bg-gray-400 rounded-lg mb-4"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Rocket Alpha</h3>
+            <span class="text-blue-200 text-sm font-medium bg-white/10 px-2 py-1 rounded">March 2023</span>
+          </div>
+          <p class="text-blue-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 2 -->
+        <div class="flex-none w-80 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-6 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.2s;">
+          <div class="w-full h-48 bg-gray-400 rounded-lg mb-4"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Drone Delta</h3>
+            <span class="text-blue-200 text-sm font-medium bg-white/10 px-2 py-1 rounded">June 2023</span>
+          </div>
+          <p class="text-blue-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 3 -->
+        <div class="flex-none w-80 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-6 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.3s;">
+          <div class="w-full h-48 bg-gray-400 rounded-lg mb-4"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Rocket Beta</h3>
+            <span class="text-blue-200 text-sm font-medium bg-white/10 px-2 py-1 rounded">September 2023</span>
+          </div>
+          <p class="text-blue-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 4 -->
+        <div class="flex-none w-80 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-6 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.4s;">
+          <div class="w-full h-48 bg-gray-400 rounded-lg mb-4"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Rocket Gamma</h3>
+            <span class="text-blue-200 text-sm font-medium bg-white/10 px-2 py-1 rounded">December 2023</span>
+          </div>
+          <p class="text-blue-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 5 -->
+        <div class="flex-none w-80 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-6 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.5s;">
+          <div class="w-full h-48 bg-gray-400 rounded-lg mb-4"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Rocket Epsilon</h3>
+            <span class="text-blue-200 text-sm font-medium bg-white/10 px-2 py-1 rounded">April 2024</span>
+          </div>
+          <p class="text-blue-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 6 -->
+        <div class="flex-none w-80 bg-white/10 backdrop-blur-md rounded-lg border border-white/20 p-6 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.6s;">
+          <div class="w-full h-48 bg-gray-400 rounded-lg mb-4"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Drone Gamma</h3>
+            <span class="text-blue-200 text-sm font-medium bg-white/10 px-2 py-1 rounded">August 2024</span>
+          </div>
+          <p class="text-blue-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 7 - Future Project -->
+        <div class="flex-none w-80 bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md rounded-lg border border-purple-300/30 p-6 hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.7s;">
+          <div class="w-full h-48 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg mb-4 opacity-80"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">Rocket Heta</h3>
+            <span class="text-purple-200 text-sm font-medium bg-purple-500/30 px-2 py-1 rounded border border-purple-300/50">March 2026</span>
+          </div>
+          <div class="flex items-center mb-2">
+            <span class="text-xs bg-purple-500/40 text-purple-100 px-2 py-1 rounded-full border border-purple-300/50">PLANNED</span>
+          </div>
+          <p class="text-purple-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <!-- Work Card 8 - Future Project -->
+        <div class="flex-none w-80 bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md rounded-lg border border-purple-300/30 p-6 hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 transform hover:-translate-y-2 animate-on-scroll" style="scroll-snap-align: start; animation-delay: 0.8s;">
+          <div class="w-full h-48 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg mb-4 opacity-80"></div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold text-white">50,000 Foot Rocket</h3>
+            <span class="text-purple-200 text-sm font-medium bg-purple-500/30 px-2 py-1 rounded border border-purple-300/50">July 2026</span>
+          </div>
+          <div class="flex items-center mb-2">
+            <span class="text-xs bg-purple-500/40 text-purple-100 px-2 py-1 rounded-full border border-purple-300/50">PLANNED</span>
+          </div>
+          <p class="text-purple-100 leading-relaxed text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- History Section - Stage 3: Deeper Blue -->
+  <Section 
+    id="services" 
+    title="History" 
+    subtitle="Our journey through the evolution of aerospace technology and innovation"
+    bgColor="bg-gradient-to-b from-blue-600 to-blue-700"
+    textColor="text-white"
+  >
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="animate-on-scroll slide-left">
+        <div class="w-full h-64 bg-gray-400 rounded-lg mb-8"></div>
+        <p class="text-blue-100 leading-relaxed mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      
+      <div class="animate-on-scroll slide-right">
+        <p class="text-blue-100 leading-relaxed mb-8">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+        <div class="w-full h-64 bg-gray-400 rounded-lg"></div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Team Section - Stage 4: Deep Blue -->
+  <Section 
+    id="team" 
+    title="Leadership" 
+    subtitle="Meet the people behind FATT"
+    bgColor="bg-gradient-to-b from-blue-700 to-blue-800"
+    textColor="text-white"
+  >
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center animate-on-scroll" style="animation-delay: 0.2s;">
+        <div class="w-32 h-32 bg-gradient-to-br from-blue-300 to-blue-400 rounded-full mx-auto mb-6 flex items-center justify-center text-blue-900 text-4xl font-bold">
+          JD
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-white">Name Lastname</h3>
+        <p class="text-blue-200 mb-3">Faculty Sponsor</p>
+        <p class="text-blue-100 text-sm">Professor, Aerospace Engineering. Former NASA engineer.</p>
+      </div>
+      
+      <div class="text-center animate-on-scroll" style="animation-delay: 0.4s;">
+        <div class="w-32 h-32 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center text-blue-900 text-4xl font-bold">
+          JS
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-white">Name Lastname</h3>
+        <p class="text-blue-200 mb-3">President</p>
+        <p class="text-blue-100 text-sm">Senior, Computer Science. Level III certified.</p>
+      </div>
+      
+      <div class="text-center animate-on-scroll" style="animation-delay: 0.6s;">
+        <div class="w-32 h-32 bg-gradient-to-br from-blue-200 to-blue-400 rounded-full mx-auto mb-6 flex items-center justify-center text-blue-900 text-4xl font-bold">
+          AB
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-white">Name Lastname</h3>
+        <p class="text-blue-200 mb-3">Vice President</p>
+        <p class="text-blue-100 text-sm">Sophomore, Aerospace Engineering. Level II certified.</p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Contact Section - Stage 5: Deep Space Blue -->
+  <section id="contact" class="relative py-20 bg-gradient-to-b from-blue-800 to-blue-900 text-white overflow-hidden">
+    <!-- Twinkling Stars for Contact Section -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+      <div class="star star-21"></div>
+      <div class="star star-22"></div>
+      <div class="star star-23"></div>
+      <div class="star star-24"></div>
+      <div class="star star-25"></div>
+      <div class="star star-26"></div>
+      <div class="star star-27"></div>
+      <div class="star star-28"></div>
+      <div class="star star-29"></div>
+      <div class="star star-30"></div>
+      <div class="star star-31"></div>
+      <div class="star star-32"></div>
+      <div class="star star-33"></div>
+      <div class="star star-34"></div>
+      <div class="star star-35"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
+          Get In Touch
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-on-scroll" style="animation-delay: 0.2s;">
+          Ready to join the club? Interested in collaborating with us? We'd love to hear from you.
+        </p>
+      </div>
+      
+      <div class="animate-on-scroll" style="animation-delay: 0.4s;">
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-white/10 backdrop-blur-md rounded-lg p-8 animate-on-scroll">
+        <div class="grid md:grid-cols-1 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+            <form class="space-y-4">
+              <input 
+                type="text" 
+                placeholder="Your Name" 
+                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+              />
+              <input 
+                type="email" 
+                placeholder="Your Email" 
+                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+              />
+              <textarea 
+                placeholder="Your Message" 
+                rows="4"
+                class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/70 text-white focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"
+              ></textarea>
+              <button 
+                type="submit" 
+                class="w-full bg-white text-purple-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - Final Stage: Deep Space Black -->
+  <footer class="relative bg-gradient-to-b from-blue-900 to-gray-900 text-white py-12 overflow-hidden">
+    <!-- Twinkling Stars -->
+    <div class="absolute inset-0 pointer-events-none z-0">
+      <div class="star star-1"></div>
+      <div class="star star-2"></div>
+      <div class="star star-3"></div>
+      <div class="star star-4"></div>
+      <div class="star star-5"></div>
+      <div class="star star-6"></div>
+      <div class="star star-7"></div>
+      <div class="star star-8"></div>
+      <div class="star star-9"></div>
+      <div class="star star-10"></div>
+      <div class="star star-11"></div>
+      <div class="star star-12"></div>
+      <div class="star star-13"></div>
+      <div class="star star-14"></div>
+      <div class="star star-15"></div>
+      <div class="star star-16"></div>
+      <div class="star star-17"></div>
+      <div class="star star-18"></div>
+      <div class="star star-19"></div>
+      <div class="star star-20"></div>
+    </div>
+    
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+      <div class="text-3xl font-bold mb-4 text-white">FATT</div>
+      <p class="text-blue-200 mb-6">The apogee is just the beginning.</p>
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="#" class="text-blue-300 hover:text-white transition-colors flex items-center gap-2">
+          <span class="text-xl">📷</span> Instagram
+        </a>
+        <a href="#" class="text-blue-300 hover:text-white transition-colors flex items-center gap-2">
+          <span class="text-xl">𝕏</span> X
+        </a>
+        <a href="#" class="text-blue-300 hover:text-white transition-colors flex items-center gap-2">
+          <span class="text-xl">🎵</span> TikTok
+        </a>
+      </div>
+    </div>
+  </footer>
+</Layout>
+

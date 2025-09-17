@@ -1,0 +1,37 @@
+---
+export interface Props {
+  id?: string;
+  title: string;
+  subtitle?: string;
+  bgColor?: string;
+  textColor?: string;
+}
+
+const { 
+  id, 
+  title, 
+  subtitle, 
+  bgColor = "bg-white", 
+  textColor = "text-gray-900" 
+} = Astro.props;
+---
+
+<section id={id} class={`py-20 ${bgColor} ${textColor}`}>
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-on-scroll">
+        {title}
+      </h2>
+      {subtitle && (
+        <p class="text-xl text-white max-w-3xl mx-auto animate-on-scroll" style="animation-delay: 0.2s;">
+          {subtitle}
+        </p>
+      )}
+    </div>
+    
+    <div class="animate-on-scroll" style="animation-delay: 0.4s;">
+      <slot />
+    </div>
+  </div>
+</section>
+
